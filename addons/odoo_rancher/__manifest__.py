@@ -2,12 +2,10 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
 {
-    'name' : 'Del Monte Philippines Central Database',
+    'name' : 'Odoo Rancher',
     'version' : '1.0',
-    'summary': 'Custom Module for Delmonte Philippines',
+    'summary': 'Integrating Odoo with Rancher',
     'description': """
-TODO
-CUSTOM FEATURES FOR DMPI CENTRAL
 
     """,
     'category': 'Custom',
