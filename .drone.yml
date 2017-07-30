@@ -1,5 +1,6 @@
 build:
   image: toolkt/odoo:odoo_rancher
   commands:
-    - cd /mnt/extra-addons/odoo_rancher && git pull
+    - ls -la
+    - cd /mnt/extra-addons/odoo_rancher && ls -la
 
