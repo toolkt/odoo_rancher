@@ -2,5 +2,20 @@ build:
   image: toolkt/odoo:odoo_rancher
   commands:
     - ls -la
-    - cd /mnt/extra-addons/odoo_rancher && ls -la
 
+compose:
+  postgres:
+    image: postgres:9.6
+
+cache:
+  mount:
+    - .git
+
+publish:
+  docker:
+    storage_driver: overlay
+    username: agpontejos
+    password: $$DOCKER_HUB_PASSWORD
+    email: agpontejos@gmail.com
+    repo: toolkt/odoo
+    tag: odoo_rancher
