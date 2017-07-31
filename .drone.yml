@@ -15,7 +15,7 @@ publish:
   docker:
     storage_driver: overlay
     username: agpontejos
-    password: $$DOCKER_HUB_PASSWORD
+    password: $DOCKER_HUB_PASSWORD
     email: agpontejos@gmail.com
     repo: toolkt/odoo
     tag: odoo_rancher
