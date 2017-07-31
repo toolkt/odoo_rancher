@@ -20,6 +20,7 @@ publish:
     repo: toolkt/odoo
     tag: odoo_rancher
 
+
 deploy:
   rancher:
     url: http://rancher.toolkt.com:8080/v1
