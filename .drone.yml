@@ -3,4 +3,3 @@ pipeline:
     image: toolkt/odoo:odoo_rancher
     commands:
       - ls -la
-
