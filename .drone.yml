@@ -6,15 +6,15 @@ pipeline:
 
   publish:
     docker:
-      storage_driver: overlay
-      username: agpontejos
-      password: f3b191980
-      email: agpontejos@gmail.com
+      image: plugins/docker
       repo: toolkt/odoo
-      tag: odoo_rancher
+      tags: odoo_rancher
+      secrets: [ docker_username, docker_password, docker_email]
 
+      
   deploy:
     rancher:
+      image: peloton/drone-rancher
       url: http://rancher.toolkt.com:8080/v1
       access_key: DF1708652D214271CA07
       secret_key: xCjxZJRjApEba4wBC85id8GzYQXC5szVMP6vh8kq
