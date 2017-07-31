@@ -1,7 +1,8 @@
-build:
-  image: toolkt/odoo:odoo_rancher
-  commands:
-    - ls -la
+pipeline:
+  build:
+    image: toolkt/odoo:odoo_rancher
+    commands:
+      - ls -la
 
 
 pipeline:
