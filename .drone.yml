@@ -4,20 +4,3 @@ pipeline:
     commands:
       - ls -la
 
-
-pipeline:
-  docker:
-    image: plugins/docker
-    repo: toolkt/odoo
-    tags: odoo_rancher
-    secrets: [ docker_username, docker_password, docker_email]
-
-
-pipeline:
-  rancher:
-    image: peloton/drone-rancher
-    url: http://rancher.toolkt.com:8080/v1
-    access_key: DF1708652D214271CA07
-    secret_key: xCjxZJRjApEba4wBC85id8GzYQXC5szVMP6vh8kq
-    service: odoorancher/odoorancher
-    docker_image: toolkt/odoo:odoo_rancher
