@@ -15,7 +15,7 @@ publish:
   docker:
     storage_driver: overlay
     username: agpontejos
-    password: f3b191980
+    password: $$DOCKER_HUB_PASSWORD
     email: agpontejos@gmail.com
     repo: toolkt/odoo
     tag: odoo_rancher
@@ -23,7 +23,7 @@ publish:
 deploy:
   rancher:
     url: http://rancher.toolkt.com:8080/v1
-    access_key: DF1708652D214271CA07
-    secret_key: xCjxZJRjApEba4wBC85id8GzYQXC5szVMP6vh8kq
+    access_key: $$RANCHER_ACCESS_KEY
+    secret_key: $$RANCHER_SECRET_KEY
     service: odoorancher/odoorancher
     docker_image: toolkt/odoo:odoo_rancher
