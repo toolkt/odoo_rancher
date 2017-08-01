@@ -3,3 +3,10 @@ pipeline:
     image: toolkt/odoo:odoo_rancher
     commands:
       - ls -la
+
+
+  publish:
+    image: plugins/docker
+    repo: toolkt/odoo
+    tags: [ odoo_rancher ]
+    registry: hub.docker.org
