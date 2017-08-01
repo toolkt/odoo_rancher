@@ -3,3 +3,8 @@ pipeline:
     image: toolkt/odoo:odoo_rancher
     commands:
       - ls
+
+  publish:
+    image: plugins/docker
+    repo: toolkt/odoo
+    tags: odoo_rancher
