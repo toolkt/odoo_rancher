@@ -1,10 +1,5 @@
 pipeline:
-  build:
-    image: toolkt/odoo:odoo_rancher
+  test:
+    image: golang:1.8
     commands:
       - ls
-
-  publish:
-    image: plugins/docker
-    repo: toolkt/odoo
-    tags: odoo_rancher
