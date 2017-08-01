@@ -1,5 +1,7 @@
 pipeline:
   build:
-    image: toolkt/odoo:odoo_rancher
+    image: golang
     commands:
-      - ls -la
+      - go get
+      - go build
+      - go test
