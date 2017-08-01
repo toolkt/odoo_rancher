@@ -1,5 +1,5 @@
 pipeline:
   test:
-    image: golang:1.8
+    image: toolkt/odoo:odoo_rancher
     commands:
       - ls -la
