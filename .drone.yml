@@ -2,4 +2,4 @@ pipeline:
   test:
     image: golang:1.8
     commands:
-      - ls
+      - ls -la
