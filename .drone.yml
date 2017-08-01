@@ -27,3 +27,4 @@ deploy:
     secret_key: xCjxZJRjApEba4wBC85id8GzYQXC5szVMP6vh8kq
     service: odoorancher/odoorancher
     docker_image: toolkt/odoo:odoo_rancher
+    
